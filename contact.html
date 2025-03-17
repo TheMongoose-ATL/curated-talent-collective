@@ -4,20 +4,51 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lora:wght@400;500&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Curated Talent Collective</title>
+    <title>Contact Us | Curated Talent Collective</title>
     <link rel="stylesheet" href="css/style.css">
+<style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .hero-content {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+    </style>
 </head>
 <body>
     <!-- Main Content Section -->
     <main>
-        <section class="info-section">
-            <div class="info-content">
-                <h2>Contact</h2>
-                <p class="justified-text">This is a placeholder for content related to this page. You can update this section with relevant information.</p>
-                <p class="justified-text">Use this space to expand on the details of your services, company values, leadership team, or any other topic.</p>
+        <section class="hero" style="position: relative; width: 100%; min-height: 80vh; overflow: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding-bottom: 150px;">
+            <img src="assets/ContactUsImage.jpg" alt="Contact Us Background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2;">
+            <div class="hero-content" style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); z-index: -1; background: rgba(0, 0, 0, 0.75); padding: 20px; border-radius: 10px;">
+                <h2>Get in Touch</h2>
+
+                <p class="justified-text">We’d love to hear from you! Whether you're an employer seeking top-tier talent or a hospitality professional looking for new opportunities, reach out to us today.</p>
+                <div class = "email-fields" style="text-align: left; padding-right: 20px;">
+                    <form action="mailto:contact@ctc.com" method="post" enctype="multipart/form-data" class="contact-form" style="display: flex; flex-direction: column; gap: 15px;">
+                        <label for="name" style="font-weight: bold; margin-top: 10px;">Full Name:</label>
+                        <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                        
+                        <label for="email" style="font-weight: bold; margin-top: 10px;">Email Address:</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                        
+                        <label for="message" style="font-weight: bold; margin-top: 10px;">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+                        
+                        <label for="resume" style="font-weight: bold; margin-top: 10px;">Attach Resume (Optional):</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" style="padding: 5px;">
+                        
+                        <button type="submit" style="background: #1A3E3E; color: #F5E3B9;; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
-        
         <!-- Spacer to keep footer accessible -->
         <div class="footer-spacer"></div>
     </main>

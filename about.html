@@ -6,15 +6,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Look Inside CTC | Curated Talent Collective</title>
     <link rel="stylesheet" href="css/style.css">
+<style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+<style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .about-hero-content h1 {
+            opacity: 0;
+            animation: slideInRight 1s ease-out forwards;
+        }
+        .about-hero-content p {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+    </style>
+<style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .about-hero-content h1 {
+            opacity: 0;
+            animation: slideInRight 1s ease-out forwards;
+        }
+        .about-hero-content p {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+        .shadowbox-header {
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-out forwards;
+            animation-delay: 0.7s;
+        }
+        .custom-list {
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-out forwards;
+            animation-delay: 1s;
+        }
+    </style>
 </head>
 <body>
     <!-- Main Content Section -->
     <main>
+        <section class="about-hero" style="display: flex; align-items: center; justify-content: space-between; padding: 0px; border: 20px solid #1A3E3E; border-radius: 10px; max-width: 100%; margin: 0 auto; background: #F8F8F8;">
+            <img src="assets/AboutUsImage.jpg" alt="About Us Image" style="width: 40%; height: auto; border-radius: 1px; margin-right: 40px; opacity: 0; transform: translateY(20px); animation: fadeInUp 1.2s ease-out forwards;">
+            <div class="about-hero-main" style="width: 55%; text-align: center; align-self: flex-start; padding-right: 40px;">
+                <div class="about-hero-content">
+                    <h1>A Look Inside The Curated Talent Collective</h1>
+                </div>
+                <p class="justified-text">
+                    Curated Talent Collective was founded with a singular vision: to transform the hospitality industry by 
+                    connecting elite talent with world-class restaurants and hospitality businesses. With decades of combined 
+                    experience, our leadership team understands that a successful business thrives on exceptional people. 
+                    Our deep-rooted expertise allows us to bridge the gap between talent and opportunity, ensuring that 
+                    every placement is a strategic fit. 
+                </p>
+                <p class="justified-text">
+                    We take a high-touch, consultative approach to recruitment, 
+                    working closely with clients to align staffing solutions with their business goals. As a family-owned 
+                    and woman-led business, we emphasize trust, authenticity, and a people-first philosophy. Whether 
+                    sourcing top-tier chefs, front-of-house managers, or executive leadership, we are committed to 
+                    elevating the hospitality experience through thoughtful, high-quality staffing.
+                </p>
+                <!-- Core Values -->
+                <div class="shadowbox-header">
+                    <h3>Our Core Values</h3>
+                </div>
+                <ul class="custom-list" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; padding-left: 0; margin-top: 10px;">
+                    <li style="padding-left: 0; margin-bottom: 10px;"><strong>Excellence in Service</strong> – We uphold the highest standards in hospitality recruitment.</li>
+                    <li style="padding-left: 0; margin-bottom: 10px;"><strong>Authentic Relationships</strong> – We foster trust and meaningful connections with our clients and talent.</li>
+                    <li style="padding-left: 0; margin-bottom: 10px;"><strong>Personalized Approach</strong> – No two businesses are the same, so we tailor our strategy to fit your specific needs.</li>
+                    <li style="padding-left: 0; margin-bottom: 10px;"><strong>Commitment to Diversity</strong> – As a woman-owned business, we value inclusivity and diverse leadership.</li>
+                </ul>
+            </div>
+        </section>
         <section class="info-section">
             <div class="info-content">
-                <h2>A Look Inside CTC</h2>
-                <p class="justified-text">This is a placeholder for content related to this page. You can update this section with relevant information.</p>
-                <p class="justified-text">Use this space to expand on the details of your services, company values, leadership team, or any other topic.</p>
+                <!-- Mission Statement -->
+                <h2>Our Mission</h2>
+                <p class="justified-text">
+                    Our mission is to bridge the gap between **top-tier talent** and **luxury hospitality brands**, ensuring 
+                    a perfect alignment between culture, skills, and vision. We don’t just fill roles—we curate long-term 
+                    success.
+                </p>
+
+                <!-- Leadership Overview -->
+                <h3>Meet Our Leadership</h3>
+                <p class="justified-text">
+                    At the heart of CTC is a leadership team with **over 20 years of experience** in staffing and recruitment. 
+                    Our executive chef has personally managed fine dining establishments, giving us **firsthand insight** into 
+                    the needs of the hospitality world.
+                </p>
+
+                <!-- High-Touch Service -->
+                <div class="shadowbox-header">
+                    <h3>A High-Touch Approach</h3>
+                </div>
+                <p class="justified-text" style="margin-bottom: 20px;">Unlike traditional staffing firms, we work **side by side** with each client, ensuring that hiring decisions 
+                    reflect not just skill, but also culture and vision. We understand the hospitality industry **inside and out**, 
+                    allowing us to place candidates who truly elevate your business.
+                </p>
             </div>
         </section>
         
@@ -26,8 +179,8 @@
     <footer>
         <div class="footer-menu">
             <ul>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">A Look Inside CTC</a></li>
+                <li style="padding-left: 0; margin-bottom: 10px;"><a href="services.html">Services</a></li>
+                <li style="padding-left: 0; margin-bottom: 10px;"><a href="about.html">A Look Inside CTC</a></li>
             </ul>
             <div class="footer-logo">
                 <a href="index.html">
@@ -35,8 +188,8 @@
                 </a>
             </div>
             <ul>
-                <li><a href="blog.html">The CTC Knowledge Hub</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li style="padding-left: 0; margin-bottom: 10px;"><a href="blog.html">The CTC Knowledge Hub</a></li>
+                <li style="padding-left: 0; margin-bottom: 10px;"><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <p>&copy; 2025 Curated Talent Collective. All Rights Reserved.</p>
